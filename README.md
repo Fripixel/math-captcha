@@ -24,6 +24,8 @@ MathCaptcha.defaults = {
 }
 ```
 
+_Demonstração_ [Demo](https://codepen.io/venturion/pen/qeqZxR)
+
 _Made By_ [fripixel.com.br](https://fripixel.com.br)
 
 
