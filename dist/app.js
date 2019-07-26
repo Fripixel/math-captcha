@@ -107,12 +107,14 @@ document.onreadystatechange = function () {
     var mathCaptcha = new _js_math_captcha__WEBPACK_IMPORTED_MODULE_1___default.a({
       selector: '[name=form]'
     });
+    document.querySelector('[name=form]').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('form submitted!');
+      console.log('form submitted!');
+      this.reset();
+      return false;
+    });
   }
-
-  document.querySelector('[name=form]').addEventListener('submit', function (e) {
-    e.preventDefault();
-    alert('form submitted!');
-  });
 };
 
 /***/ }),
@@ -135,9 +137,7 @@ document.onreadystatechange = function () {
     console.error('To use this library you need to either use browser or node.js [require()]');
   }
 })(function () {
-  'use strict';
-
-  var initialized = false; // Plugin Constructor
+  'use strict'; // Plugin Constructor
 
   var MathCaptcha = function MathCaptcha(opts) {
     this.options = Object.assign(MathCaptcha.defaults, opts);
@@ -147,7 +147,6 @@ document.onreadystatechange = function () {
 
   MathCaptcha.prototype.init = function (options) {
     this.options = options ? Object.assign(this.options, options) : this.options;
-    init(this);
     var selector = this.options.selector;
     var inputClass = this.options.inputClass;
     var inputName = this.options.inputName;
