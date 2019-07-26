@@ -1,5 +1,5 @@
 {
-  "name": "math-captcha",
+  "name": "@fripixel/math-captcha",
   "version": "1.0.0",
   "description": "Math Captcha Pure JS",
   "main": "index.js",

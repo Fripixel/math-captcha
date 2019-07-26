@@ -5,9 +5,9 @@ module.exports = {
   target: 'web',
   mode: process.env.NODE_ENV,
   context: __dirname,
-  entry: ['./assets/js/index.js'],
+  entry: ['./assets/js/math-captcha.js'],
   output: {
-    filename: 'app.js',
+    filename: 'math-captcha.js',
     path: path.resolve('./dist/')
   },
   devtool: false,
