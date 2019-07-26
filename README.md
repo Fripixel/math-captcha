@@ -4,7 +4,7 @@ This plugin adds a captcha box before the submit button in your form.
 
 #### How to use:
 
-```
+```javascript
 /* Inicialização */
 var mathCaptcha = new MathCaptcha({
   selector: '#form'
