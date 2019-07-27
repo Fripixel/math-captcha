@@ -1,8 +1,12 @@
 {
   "name": "@fripixel/math-captcha",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Math Captcha Pure JS",
-  "main": "index.js",
+  "main": "dist/math-captcha.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fripixel/math-captcha.git"
+  },
   "scripts": {
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
     "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --watch --progress --hide-modules",
@@ -15,11 +19,11 @@
   "author": "Felipe Venturino <felipeventurino@hotmail.com> (http://fripixel.com.br)",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "css-loader": "^3.1.0",
-    "style-loader": "^0.23.1"
+    "bootstrap": "^4.3.1"
   },
   "devDependencies": {
+    "css-loader": "^3.1.0",
+    "style-loader": "^0.23.1",
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
     "babel-eslint": "^10.0.2",
